@@ -1047,7 +1047,7 @@ body {
 
 b,
 strong {
-  font-weight: bold; }
+  font-family: "RalewayBold"; }
 
 i {
   font-style: italic; }
@@ -1154,11 +1154,6 @@ i {
   -webkit-align-items: flex-start;
   -ms-flex-align: start;
   align-items: flex-start; }
-
-.header .container {
-  width: 1315px;
-  padding-left: 0;
-  padding-right: 0; }
 
 .logo {
   padding-top: 15px; }
@@ -1663,6 +1658,10 @@ h5 {
 .copyright {
   padding: 20px 0;
   border-top: 1px solid #3e4140; }
+  .copyright a {
+    color: #fff; }
+    .copyright a:hover {
+      text-decoration: underline; }
 
 .ui-helper-hidden {
   display: none; }
@@ -1930,3 +1929,42 @@ h5 {
   color: #9cadbe;
   position: relative;
   top: -6px; }
+
+.close-nav {
+  width: 18px;
+  display: block;
+  height: 18px;
+  background: url(../img/cross.png) no-repeat;
+  position: absolute;
+  top: 15px;
+  right: 15px; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+.toggle-btn {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  top: 5px;
+  cursor: pointer; }
+
+.icon-bar {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background: #fff; }
+  .icon-bar + .icon-bar {
+    margin-top: 5px; }
+
+.scroll-btn {
+  width: 40px;
+  height: 40px;
+  left: 50%;
+  margin-left: -20px;
+  bottom: 30px;
+  display: block;
+  position: absolute;
+  z-index: 3;
+  background: url(../img/scroll.png) no-repeat; }

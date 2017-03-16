@@ -1,0 +1,196 @@
+@media (min-width: 1350px) {
+  .header .container {
+    width: 1315px;
+    padding-left: 0;
+    padding-right: 0; } }
+
+@media (max-width: 1199px) {
+  .top-nav {
+    width: 580px; }
+  .bottom-menu a {
+    font-size: 13px; } }
+
+@media (min-width: 992px) {
+  .toggle-btn {
+    display: none; }
+  .close-nav {
+    display: none; }
+  .header.fixed .header-tel:before {
+    background: url(../img/call-answer-blue.png) no-repeat; } }
+
+@media (max-width: 991px) {
+  .thumb-item {
+    margin: 0;
+    font-size: 16px; }
+  .header.fixed {
+    position: absolute; }
+  .header-tel {
+    padding-right: 40px; }
+  .top-nav {
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    top: -100%;
+    width: 300px;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    background: #000;
+    color: #fff;
+    padding: 15px;
+    opacity: 0;
+    visibility: hidden; }
+    .top-nav.active {
+      top: 0;
+      opacity: 1;
+      visibility: visible; }
+    .top-nav .pull-left,
+    .top-nav .pull-right {
+      float: none !important; }
+  .top-menu > li + li {
+    margin-left: 0; }
+  .top-menu > li a {
+    font-size: 16px; }
+    .top-menu > li a:hover {
+      text-decoration: underline; }
+  .top-menu > li a {
+    opacity: 1; }
+  .top-nav__top {
+    margin-bottom: 15px; }
+  .top-menu > li + li,
+  .bottom-menu > li + li {
+    margin-top: 10px; }
+  .bottom-menu a {
+    font-size: 16px; }
+    .bottom-menu a:hover {
+      text-decoration: underline; }
+  .top-menu > li {
+    float: none; }
+  .lang-item {
+    font-size: 16px; }
+  .lang {
+    margin-bottom: 15px; }
+  .bottom-menu {
+    display: block; }
+  .main-slider-text h1 {
+    font-size: 32px; }
+  h2 {
+    font-size: 24px; }
+  .footer-wrapp {
+    display: block; }
+    .footer-wrapp:after {
+      content: "";
+      display: block;
+      height: 0;
+      clear: both; }
+  .footer-left {
+    float: left; }
+  .footer-center {
+    float: right; }
+  .footer-right {
+    clear: both; }
+  .subscribe-text {
+    margin-bottom: 20px; } }
+
+@media (max-width: 767px) {
+  .main-slider {
+    min-height: 100%; }
+  .scroll-btn {
+    display: none; }
+  .slider-item {
+    min-height: 100vh; }
+  .copyright {
+    padding: 15px;
+    font-size: 12px; }
+  .copyright > div {
+    width: 100%;
+    margin-bottom: 5px; }
+  .thumb-item {
+    width: 24%;
+    margin-bottom: 20px; }
+  .footer-social a {
+    font-size: 18px; }
+  .thumb {
+    bottom: 0; }
+  .thumb-text {
+    display: none; }
+  .main-slider-text {
+    position: relative;
+    top: 10%; }
+  .main-slider-text h1 {
+    font-size: 24px; }
+  .photo-item_large,
+  .photo-item {
+    height: 200px;
+    padding: 15px; }
+  .photo-block .photo-text {
+    font-size: 18px; }
+  h2 {
+    font-size: 18px; }
+  .event-choice,
+  .event-list {
+    padding: 15px;
+    border: 0;
+    height: auto; }
+  .slider-item {
+    padding-top: 120px; }
+  .arends {
+    padding: 15px; }
+  .filter-item {
+    width: 100%; }
+  h4 {
+    font-size: 16px; }
+  .review-wrapp {
+    padding-left: 0;
+    padding-right: 0; }
+  .user-name,
+  .review-date {
+    display: block;
+    margin-left: 0; }
+  .review-item {
+    padding-left: 60px; }
+  .review-block {
+    padding-top: 15px;
+    padding-bottom: 15px; }
+  .btn {
+    padding: 20px;
+    min-width: 140px; }
+  .nav-tabs > li {
+    width: 100%;
+    border: 1px solid #eef1f4; }
+  .tab-pane {
+    padding: 15px; }
+  .tab-pane h2 {
+    margin-bottom: 20px; }
+  .event-choice__total {
+    font-size: 20px; }
+  .thumb-item {
+    font-size: 14px; }
+  .footer-wrapp {
+    padding: 15px; }
+  .footer-center {
+    float: left; }
+  .subscribe-input {
+    width: 100%;
+    float: none; }
+  .subscribe-submit {
+    float: none;
+    margin: auto;
+    margin-top: 15px; } }
+
+@media (max-width: 500px) {
+  .products-list > .col-xs-6 {
+    width: 100%; }
+  .logo {
+    width: 90px; }
+  .header-tel:before {
+    content: none; }
+  .header-tel {
+    padding-left: 0;
+    margin-top: 20px; }
+  .review-btn .btn {
+    margin: 0 5px; }
+  .choice-range {
+    max-width: inherit;
+    margin-bottom: 30px; }
+  .event-choice__title {
+    margin-bottom: 20px; } }
