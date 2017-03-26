@@ -22,6 +22,8 @@
   .thumb-item {
     margin: 0;
     font-size: 16px; }
+  .product-filter .filter-item {
+    font-size: 12px; }
   .header.fixed {
     position: absolute; }
   .header-tel {
@@ -43,6 +45,12 @@
       top: 0;
       opacity: 1;
       visibility: visible; }
+      .top-nav.active .top-nav__bottom a,
+      .top-nav.active .bottom-nav a {
+        color: #fff !important; }
+      .top-nav.active .lang-item.active,
+      .top-nav.active .lang-item:hover {
+        color: #fff; }
     .top-nav .pull-left,
     .top-nav .pull-right {
       float: none !important; }
@@ -91,14 +99,31 @@
   .subscribe-text {
     margin-bottom: 20px; } }
 
+@media (min-width: 768px) {
+  .visible-xs {
+    display: none; } }
+
 @media (max-width: 767px) {
   .main-slider {
     min-height: 100%; }
+  .product-filter .filter-item,
+  .filter-select {
+    width: 100%; }
+  .product-filter .filter-item {
+    border-width: 1px; }
   .scroll-btn {
+    display: none; }
+  .center-content {
+    margin-top: 20px; }
+  .sidebar {
+    float: none;
+    width: 100%;
     display: none; }
   .copyright {
     padding: 15px;
     font-size: 12px; }
+  .center-content {
+    padding-left: 0; }
   .copyright > div {
     width: 100%;
     margin-bottom: 5px; }
