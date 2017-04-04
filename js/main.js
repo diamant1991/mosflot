@@ -10,6 +10,10 @@ $('#main-slider').bxSlider({
   speed: 700
 });
 
+$('.filter-item').click(function() {
+  $('.filter-item').removeClass('active');
+  $(this).addClass('active')
+});
 $('.toggle-btn').click(function(e) {
   var menu = $('#top-nav');
   menu.addClass('active')
@@ -49,7 +53,7 @@ $(document).ready(function(){
       }
     });
   }
-  
+
   $(window).scroll(function() {
     scrollPos = $(window).scrollTop();
     

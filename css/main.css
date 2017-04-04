@@ -1363,6 +1363,9 @@ h5 {
   font-family: "RalewayRegular";
   padding: 20px 40px;
   color: #fff;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
   min-width: 180px; }
 
 .btn-grey {
@@ -2256,3 +2259,112 @@ img {
   width: 100%;
   cursor: pointer;
   text-align: center; }
+
+.modal {
+  text-align: center; }
+
+.modal-header {
+  background: #eaf0f5;
+  font-size: 15px;
+  font-family: "RalewaySemiBold"; }
+
+.modal-title {
+  font-size: 15px;
+  padding: 40px 0; }
+
+.modal-open {
+  overflow: hidden; }
+
+.modal-form {
+  max-width: 310px;
+  margin: auto;
+  padding: 65px 0; }
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  display: none;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  outline: 0; }
+
+.modal.fade .modal-dialog {
+  -webkit-transition: -webkit-transform .3s ease-out;
+  transition: -webkit-transform .3s ease-out;
+  transition: transform .3s ease-out;
+  transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+  -webkit-transform: translate(0, -25%);
+  -ms-transform: translate(0, -25%);
+  transform: translate(0, -25%); }
+
+.modal.in .modal-dialog {
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0); }
+
+.modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto; }
+
+.modal-dialog {
+  position: relative;
+  width: 620px;
+  margin: 30px auto; }
+
+.modal-content {
+  position: relative;
+  background-color: #fff;
+  background-clip: padding-box;
+  outline: 0; }
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  background-color: #000; }
+
+.modal-backdrop.fade {
+  filter: alpha(opacity=0);
+  opacity: 0; }
+
+.modal-backdrop.in {
+  filter: alpha(opacity=50);
+  opacity: .5; }
+
+.modal-scrollbar-measure {
+  position: absolute;
+  top: -9999px;
+  width: 50px;
+  height: 50px;
+  overflow: scroll; }
+
+.modal-body {
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.form-control {
+  display: block;
+  width: 100%;
+  border: 0;
+  height: 55px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: #eaf0f5;
+  font-size: 13px;
+  font-family: #reg;
+  color: #000; }
+
+.form-group + .form-group {
+  margin-top: 25px; }
+
+.form-group_submit {
+  padding-top: 25px; }

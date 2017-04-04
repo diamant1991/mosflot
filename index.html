@@ -68,7 +68,7 @@
     					+ 7 495 730 08 60<br>
     					+ 7 495 730 08 60
     				</div>
-    				<a href="#" class="header-tel__link">Обратный звонок</a>
+    				<a href="#" class="header-tel__link" data-toggle="modal" data-target="#modal">Обратный звонок</a>
     			</div>
     		</div>
     	</div>
@@ -176,231 +176,475 @@
                 Широкий выбор Теплоходов и Яхт
               </h2>
               <div class="filter clearfix">
-                <a href="#" class="filter-item active">Популярные</a>
-                <a href="#" class="filter-item">до 30 чел</a>
-                <a href="#" class="filter-item">до 60 чел</a>
-                <a href="#" class="filter-item">до 160 чел</a>
-                <a href="#" class="filter-item">свыше 160 чел</a>
+                <a href="#popular" role="tab" data-toggle="tab" class="filter-item active">Популярные</a>
+                <a href="#about30" role="tab" data-toggle="tab" class="filter-item">до 30 чел</a>
+                <a href="#about60" role="tab" data-toggle="tab" class="filter-item">до 60 чел</a>
+                <a href="#about160" role="tab" data-toggle="tab" class="filter-item">до 160 чел</a>
+                <a href="#more160" role="tab" data-toggle="tab" class="filter-item">свыше 160 чел</a>
               </div>
-              <div class="products-list clearfix">
-                <div class="col-md-3 col-sm-4 col-xs-6">
-                  <div class="row products-block">
-                    <div class="products-item">
-                      <a href="#">
-                        <div class="products-img" style="background-image: url(img/products.jpg)"></div>
-                      </a>
-                      <div class="products-descr">
-                        <div class="products-title">
-                          Теплоход “Антон Чехов”
+              <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="popular">
+                  <div class="products-list clearfix">
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                      <div class="row products-block">
+                        <div class="products-item">
+                          <a href="#">
+                            <div class="products-img" style="background-image: url(img/products.jpg)"></div>
+                          </a>
+                          <div class="products-descr">
+                            <div class="products-title">
+                              Теплоход “Антон Чехов”
+                            </div>
+                            <div class="products-char clearfix">
+                              <div class="products-char-item clearfix">
+                                <div class="char-left pull-left">Стоимость:</div>
+                                <div class="char-right pull-right">от 2000руб./ чел</div>
+                              </div>
+                              <div class="products-char-item clearfix">
+                                <div class="char-left pull-left">Фуршет:</div>
+                                <div class="char-right pull-right">до 30 человек</div>
+                              </div>
+                              <div class="products-char-item clearfix">
+                                <div class="char-left pull-left">Банкет:</div>
+                                <div class="char-right pull-right">до 60 человек</div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                        <div class="products-char clearfix">
-                          <div class="products-char-item clearfix">
-                            <div class="char-left pull-left">Стоимость:</div>
-                            <div class="char-right pull-right">от 2000руб./ чел</div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                      <div class="row products-block">
+                        <div class="products-item">
+                          <a href="#">
+                            <div class="products-img" style="background-image: url(img/products.jpg)"></div>
+                          </a>
+                          <div class="products-descr">
+                            <div class="products-title">
+                              Теплоход “Антон Чехов”
+                            </div>
+                            <div class="products-char clearfix">
+                              <div class="products-char-item clearfix">
+                                <div class="char-left pull-left">Стоимость:</div>
+                                <div class="char-right pull-right">от 2000руб./ чел</div>
+                              </div>
+                              <div class="products-char-item clearfix">
+                                <div class="char-left pull-left">Фуршет:</div>
+                                <div class="char-right pull-right">до 30 человек</div>
+                              </div>
+                              <div class="products-char-item clearfix">
+                                <div class="char-left pull-left">Банкет:</div>
+                                <div class="char-right pull-right">до 60 человек</div>
+                              </div>
+                            </div>
                           </div>
-                          <div class="products-char-item clearfix">
-                            <div class="char-left pull-left">Фуршет:</div>
-                            <div class="char-right pull-right">до 30 человек</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                      <div class="row products-block">
+                        <div class="products-item">
+                          <a href="#">
+                            <div class="products-img" style="background-image: url(img/products.jpg)"></div>
+                          </a>
+                          <div class="products-descr">
+                            <div class="products-title">
+                              Теплоход “Антон Чехов”
+                            </div>
+                            <div class="products-char clearfix">
+                              <div class="products-char-item clearfix">
+                                <div class="char-left pull-left">Стоимость:</div>
+                                <div class="char-right pull-right">от 2000руб./ чел</div>
+                              </div>
+                              <div class="products-char-item clearfix">
+                                <div class="char-left pull-left">Фуршет:</div>
+                                <div class="char-right pull-right">до 30 человек</div>
+                              </div>
+                              <div class="products-char-item clearfix">
+                                <div class="char-left pull-left">Банкет:</div>
+                                <div class="char-right pull-right">до 60 человек</div>
+                              </div>
+                            </div>
                           </div>
-                          <div class="products-char-item clearfix">
-                            <div class="char-left pull-left">Банкет:</div>
-                            <div class="char-right pull-right">до 60 человек</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                      <div class="row products-block">
+                        <div class="products-item">
+                          <a href="#">
+                            <div class="products-img" style="background-image: url(img/products.jpg)"></div>
+                          </a>
+                          <div class="products-descr">
+                            <div class="products-title">
+                              Теплоход “Антон Чехов”
+                            </div>
+                            <div class="products-char clearfix">
+                              <div class="products-char-item clearfix">
+                                <div class="char-left pull-left">Стоимость:</div>
+                                <div class="char-right pull-right">от 2000руб./ чел</div>
+                              </div>
+                              <div class="products-char-item clearfix">
+                                <div class="char-left pull-left">Фуршет:</div>
+                                <div class="char-right pull-right">до 30 человек</div>
+                              </div>
+                              <div class="products-char-item clearfix">
+                                <div class="char-left pull-left">Банкет:</div>
+                                <div class="char-right pull-right">до 60 человек</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                      <div class="row products-block">
+                        <div class="products-item">
+                          <a href="#">
+                            <div class="products-img" style="background-image: url(img/products.jpg)"></div>
+                          </a>
+                          <div class="products-descr">
+                            <div class="products-title">
+                              Теплоход “Антон Чехов”
+                            </div>
+                            <div class="products-char clearfix">
+                              <div class="products-char-item clearfix">
+                                <div class="char-left pull-left">Стоимость:</div>
+                                <div class="char-right pull-right">от 2000руб./ чел</div>
+                              </div>
+                              <div class="products-char-item clearfix">
+                                <div class="char-left pull-left">Фуршет:</div>
+                                <div class="char-right pull-right">до 30 человек</div>
+                              </div>
+                              <div class="products-char-item clearfix">
+                                <div class="char-left pull-left">Банкет:</div>
+                                <div class="char-right pull-right">до 60 человек</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                      <div class="row products-block">
+                        <div class="products-item">
+                          <a href="#">
+                            <div class="products-img" style="background-image: url(img/products.jpg)"></div>
+                          </a>
+                          <div class="products-descr">
+                            <div class="products-title">
+                              Теплоход “Антон Чехов”
+                            </div>
+                            <div class="products-char clearfix">
+                              <div class="products-char-item clearfix">
+                                <div class="char-left pull-left">Стоимость:</div>
+                                <div class="char-right pull-right">от 2000руб./ чел</div>
+                              </div>
+                              <div class="products-char-item clearfix">
+                                <div class="char-left pull-left">Фуршет:</div>
+                                <div class="char-right pull-right">до 30 человек</div>
+                              </div>
+                              <div class="products-char-item clearfix">
+                                <div class="char-left pull-left">Банкет:</div>
+                                <div class="char-right pull-right">до 60 человек</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                      <div class="row products-block">
+                        <div class="products-item">
+                          <a href="#">
+                            <div class="products-img" style="background-image: url(img/products.jpg)"></div>
+                          </a>
+                          <div class="products-descr">
+                            <div class="products-title">
+                              Теплоход “Антон Чехов”
+                            </div>
+                            <div class="products-char clearfix">
+                              <div class="products-char-item clearfix">
+                                <div class="char-left pull-left">Стоимость:</div>
+                                <div class="char-right pull-right">от 2000руб./ чел</div>
+                              </div>
+                              <div class="products-char-item clearfix">
+                                <div class="char-left pull-left">Фуршет:</div>
+                                <div class="char-right pull-right">до 30 человек</div>
+                              </div>
+                              <div class="products-char-item clearfix">
+                                <div class="char-left pull-left">Банкет:</div>
+                                <div class="char-right pull-right">до 60 человек</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                      <div class="row products-block">
+                        <div class="products-item">
+                          <a href="#">
+                            <div class="products-img" style="background-image: url(img/products.jpg)"></div>
+                          </a>
+                          <div class="products-descr">
+                            <div class="products-title">
+                              Теплоход “Антон Чехов”
+                            </div>
+                            <div class="products-char clearfix">
+                              <div class="products-char-item clearfix">
+                                <div class="char-left pull-left">Стоимость:</div>
+                                <div class="char-right pull-right">от 2000руб./ чел</div>
+                              </div>
+                              <div class="products-char-item clearfix">
+                                <div class="char-left pull-left">Фуршет:</div>
+                                <div class="char-right pull-right">до 30 человек</div>
+                              </div>
+                              <div class="products-char-item clearfix">
+                                <div class="char-left pull-left">Банкет:</div>
+                                <div class="char-right pull-right">до 60 человек</div>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-3 col-sm-4 col-xs-6">
-                  <div class="row products-block">
-                    <div class="products-item">
-                      <a href="#">
-                        <div class="products-img" style="background-image: url(img/products.jpg)"></div>
-                      </a>
-                      <div class="products-descr">
-                        <div class="products-title">
-                          Теплоход “Антон Чехов”
+                <div role="tabpanel" class="tab-pane" id="about30">
+                  <div class="products-list clearfix">
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                      <div class="row products-block">
+                        <div class="products-item">
+                          <a href="#">
+                            <div class="products-img" style="background-image: url(img/products.jpg)"></div>
+                          </a>
+                          <div class="products-descr">
+                            <div class="products-title">
+                              Теплоход “Антон Чехов”
+                            </div>
+                            <div class="products-char clearfix">
+                              <div class="products-char-item clearfix">
+                                <div class="char-left pull-left">Стоимость:</div>
+                                <div class="char-right pull-right">от 2000руб./ чел</div>
+                              </div>
+                              <div class="products-char-item clearfix">
+                                <div class="char-left pull-left">Фуршет:</div>
+                                <div class="char-right pull-right">до 30 человек</div>
+                              </div>
+                              <div class="products-char-item clearfix">
+                                <div class="char-left pull-left">Банкет:</div>
+                                <div class="char-right pull-right">до 60 человек</div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                        <div class="products-char clearfix">
-                          <div class="products-char-item clearfix">
-                            <div class="char-left pull-left">Стоимость:</div>
-                            <div class="char-right pull-right">от 2000руб./ чел</div>
-                          </div>
-                          <div class="products-char-item clearfix">
-                            <div class="char-left pull-left">Фуршет:</div>
-                            <div class="char-right pull-right">до 30 человек</div>
-                          </div>
-                          <div class="products-char-item clearfix">
-                            <div class="char-left pull-left">Банкет:</div>
-                            <div class="char-right pull-right">до 60 человек</div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                      <div class="row products-block">
+                        <div class="products-item">
+                          <a href="#">
+                            <div class="products-img" style="background-image: url(img/products.jpg)"></div>
+                          </a>
+                          <div class="products-descr">
+                            <div class="products-title">
+                              Теплоход “Антон Чехов”
+                            </div>
+                            <div class="products-char clearfix">
+                              <div class="products-char-item clearfix">
+                                <div class="char-left pull-left">Стоимость:</div>
+                                <div class="char-right pull-right">от 2000руб./ чел</div>
+                              </div>
+                              <div class="products-char-item clearfix">
+                                <div class="char-left pull-left">Фуршет:</div>
+                                <div class="char-right pull-right">до 30 человек</div>
+                              </div>
+                              <div class="products-char-item clearfix">
+                                <div class="char-left pull-left">Банкет:</div>
+                                <div class="char-right pull-right">до 60 человек</div>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-3 col-sm-4 col-xs-6">
-                  <div class="row products-block">
-                    <div class="products-item">
-                      <a href="#">
-                        <div class="products-img" style="background-image: url(img/products.jpg)"></div>
-                      </a>
-                      <div class="products-descr">
-                        <div class="products-title">
-                          Теплоход “Антон Чехов”
-                        </div>
-                        <div class="products-char clearfix">
-                          <div class="products-char-item clearfix">
-                            <div class="char-left pull-left">Стоимость:</div>
-                            <div class="char-right pull-right">от 2000руб./ чел</div>
-                          </div>
-                          <div class="products-char-item clearfix">
-                            <div class="char-left pull-left">Фуршет:</div>
-                            <div class="char-right pull-right">до 30 человек</div>
-                          </div>
-                          <div class="products-char-item clearfix">
-                            <div class="char-left pull-left">Банкет:</div>
-                            <div class="char-right pull-right">до 60 человек</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-4 col-xs-6">
-                  <div class="row products-block">
-                    <div class="products-item">
-                      <a href="#">
-                        <div class="products-img" style="background-image: url(img/products.jpg)"></div>
-                      </a>
-                      <div class="products-descr">
-                        <div class="products-title">
-                          Теплоход “Антон Чехов”
-                        </div>
-                        <div class="products-char clearfix">
-                          <div class="products-char-item clearfix">
-                            <div class="char-left pull-left">Стоимость:</div>
-                            <div class="char-right pull-right">от 2000руб./ чел</div>
-                          </div>
-                          <div class="products-char-item clearfix">
-                            <div class="char-left pull-left">Фуршет:</div>
-                            <div class="char-right pull-right">до 30 человек</div>
-                          </div>
-                          <div class="products-char-item clearfix">
-                            <div class="char-left pull-left">Банкет:</div>
-                            <div class="char-right pull-right">до 60 человек</div>
+                <div role="tabpanel" class="tab-pane" id="about60">
+                  <div class="products-list clearfix">
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                      <div class="row products-block">
+                        <div class="products-item">
+                          <a href="#">
+                            <div class="products-img" style="background-image: url(img/products.jpg)"></div>
+                          </a>
+                          <div class="products-descr">
+                            <div class="products-title">
+                              Теплоход “Антон Чехов”
+                            </div>
+                            <div class="products-char clearfix">
+                              <div class="products-char-item clearfix">
+                                <div class="char-left pull-left">Стоимость:</div>
+                                <div class="char-right pull-right">от 2000руб./ чел</div>
+                              </div>
+                              <div class="products-char-item clearfix">
+                                <div class="char-left pull-left">Фуршет:</div>
+                                <div class="char-right pull-right">до 30 человек</div>
+                              </div>
+                              <div class="products-char-item clearfix">
+                                <div class="char-left pull-left">Банкет:</div>
+                                <div class="char-right pull-right">до 60 человек</div>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-3 col-sm-4 col-xs-6">
-                  <div class="row products-block">
-                    <div class="products-item">
-                      <a href="#">
-                        <div class="products-img" style="background-image: url(img/products.jpg)"></div>
-                      </a>
-                      <div class="products-descr">
-                        <div class="products-title">
-                          Теплоход “Антон Чехов”
+                <div role="tabpanel" class="tab-pane" id="about160">
+                  <div class="products-list clearfix">
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                      <div class="row products-block">
+                        <div class="products-item">
+                          <a href="#">
+                            <div class="products-img" style="background-image: url(img/products.jpg)"></div>
+                          </a>
+                          <div class="products-descr">
+                            <div class="products-title">
+                              Теплоход “Антон Чехов”
+                            </div>
+                            <div class="products-char clearfix">
+                              <div class="products-char-item clearfix">
+                                <div class="char-left pull-left">Стоимость:</div>
+                                <div class="char-right pull-right">от 2000руб./ чел</div>
+                              </div>
+                              <div class="products-char-item clearfix">
+                                <div class="char-left pull-left">Фуршет:</div>
+                                <div class="char-right pull-right">до 30 человек</div>
+                              </div>
+                              <div class="products-char-item clearfix">
+                                <div class="char-left pull-left">Банкет:</div>
+                                <div class="char-right pull-right">до 60 человек</div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                        <div class="products-char clearfix">
-                          <div class="products-char-item clearfix">
-                            <div class="char-left pull-left">Стоимость:</div>
-                            <div class="char-right pull-right">от 2000руб./ чел</div>
-                          </div>
-                          <div class="products-char-item clearfix">
-                            <div class="char-left pull-left">Фуршет:</div>
-                            <div class="char-right pull-right">до 30 человек</div>
-                          </div>
-                          <div class="products-char-item clearfix">
-                            <div class="char-left pull-left">Банкет:</div>
-                            <div class="char-right pull-right">до 60 человек</div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                      <div class="row products-block">
+                        <div class="products-item">
+                          <a href="#">
+                            <div class="products-img" style="background-image: url(img/products.jpg)"></div>
+                          </a>
+                          <div class="products-descr">
+                            <div class="products-title">
+                              Теплоход “Антон Чехов”
+                            </div>
+                            <div class="products-char clearfix">
+                              <div class="products-char-item clearfix">
+                                <div class="char-left pull-left">Стоимость:</div>
+                                <div class="char-right pull-right">от 2000руб./ чел</div>
+                              </div>
+                              <div class="products-char-item clearfix">
+                                <div class="char-left pull-left">Фуршет:</div>
+                                <div class="char-right pull-right">до 30 человек</div>
+                              </div>
+                              <div class="products-char-item clearfix">
+                                <div class="char-left pull-left">Банкет:</div>
+                                <div class="char-right pull-right">до 60 человек</div>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-3 col-sm-4 col-xs-6">
-                  <div class="row products-block">
-                    <div class="products-item">
-                      <a href="#">
-                        <div class="products-img" style="background-image: url(img/products.jpg)"></div>
-                      </a>
-                      <div class="products-descr">
-                        <div class="products-title">
-                          Теплоход “Антон Чехов”
-                        </div>
-                        <div class="products-char clearfix">
-                          <div class="products-char-item clearfix">
-                            <div class="char-left pull-left">Стоимость:</div>
-                            <div class="char-right pull-right">от 2000руб./ чел</div>
-                          </div>
-                          <div class="products-char-item clearfix">
-                            <div class="char-left pull-left">Фуршет:</div>
-                            <div class="char-right pull-right">до 30 человек</div>
-                          </div>
-                          <div class="products-char-item clearfix">
-                            <div class="char-left pull-left">Банкет:</div>
-                            <div class="char-right pull-right">до 60 человек</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-4 col-xs-6">
-                  <div class="row products-block">
-                    <div class="products-item">
-                      <a href="#">
-                        <div class="products-img" style="background-image: url(img/products.jpg)"></div>
-                      </a>
-                      <div class="products-descr">
-                        <div class="products-title">
-                          Теплоход “Антон Чехов”
-                        </div>
-                        <div class="products-char clearfix">
-                          <div class="products-char-item clearfix">
-                            <div class="char-left pull-left">Стоимость:</div>
-                            <div class="char-right pull-right">от 2000руб./ чел</div>
-                          </div>
-                          <div class="products-char-item clearfix">
-                            <div class="char-left pull-left">Фуршет:</div>
-                            <div class="char-right pull-right">до 30 человек</div>
-                          </div>
-                          <div class="products-char-item clearfix">
-                            <div class="char-left pull-left">Банкет:</div>
-                            <div class="char-right pull-right">до 60 человек</div>
+                <div role="tabpanel" class="tab-pane" id="more160">
+                  <div class="products-list clearfix">
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                      <div class="row products-block">
+                        <div class="products-item">
+                          <a href="#">
+                            <div class="products-img" style="background-image: url(img/products.jpg)"></div>
+                          </a>
+                          <div class="products-descr">
+                            <div class="products-title">
+                              Теплоход “Антон Чехов”
+                            </div>
+                            <div class="products-char clearfix">
+                              <div class="products-char-item clearfix">
+                                <div class="char-left pull-left">Стоимость:</div>
+                                <div class="char-right pull-right">от 2000руб./ чел</div>
+                              </div>
+                              <div class="products-char-item clearfix">
+                                <div class="char-left pull-left">Фуршет:</div>
+                                <div class="char-right pull-right">до 30 человек</div>
+                              </div>
+                              <div class="products-char-item clearfix">
+                                <div class="char-left pull-left">Банкет:</div>
+                                <div class="char-right pull-right">до 60 человек</div>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-4 col-xs-6">
-                  <div class="row products-block">
-                    <div class="products-item">
-                      <a href="#">
-                        <div class="products-img" style="background-image: url(img/products.jpg)"></div>
-                      </a>
-                      <div class="products-descr">
-                        <div class="products-title">
-                          Теплоход “Антон Чехов”
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                      <div class="row products-block">
+                        <div class="products-item">
+                          <a href="#">
+                            <div class="products-img" style="background-image: url(img/products.jpg)"></div>
+                          </a>
+                          <div class="products-descr">
+                            <div class="products-title">
+                              Теплоход “Антон Чехов”
+                            </div>
+                            <div class="products-char clearfix">
+                              <div class="products-char-item clearfix">
+                                <div class="char-left pull-left">Стоимость:</div>
+                                <div class="char-right pull-right">от 2000руб./ чел</div>
+                              </div>
+                              <div class="products-char-item clearfix">
+                                <div class="char-left pull-left">Фуршет:</div>
+                                <div class="char-right pull-right">до 30 человек</div>
+                              </div>
+                              <div class="products-char-item clearfix">
+                                <div class="char-left pull-left">Банкет:</div>
+                                <div class="char-right pull-right">до 60 человек</div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                        <div class="products-char clearfix">
-                          <div class="products-char-item clearfix">
-                            <div class="char-left pull-left">Стоимость:</div>
-                            <div class="char-right pull-right">от 2000руб./ чел</div>
-                          </div>
-                          <div class="products-char-item clearfix">
-                            <div class="char-left pull-left">Фуршет:</div>
-                            <div class="char-right pull-right">до 30 человек</div>
-                          </div>
-                          <div class="products-char-item clearfix">
-                            <div class="char-left pull-left">Банкет:</div>
-                            <div class="char-right pull-right">до 60 человек</div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                      <div class="row products-block">
+                        <div class="products-item">
+                          <a href="#">
+                            <div class="products-img" style="background-image: url(img/products.jpg)"></div>
+                          </a>
+                          <div class="products-descr">
+                            <div class="products-title">
+                              Теплоход “Антон Чехов”
+                            </div>
+                            <div class="products-char clearfix">
+                              <div class="products-char-item clearfix">
+                                <div class="char-left pull-left">Стоимость:</div>
+                                <div class="char-right pull-right">от 2000руб./ чел</div>
+                              </div>
+                              <div class="products-char-item clearfix">
+                                <div class="char-left pull-left">Фуршет:</div>
+                                <div class="char-right pull-right">до 30 человек</div>
+                              </div>
+                              <div class="products-char-item clearfix">
+                                <div class="char-left pull-left">Банкет:</div>
+                                <div class="char-right pull-right">до 60 человек</div>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -925,6 +1169,31 @@
           		</div>
           	</div>
           </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Пожалуйста, оставьте свои контактные данные</h5>
+        </div>
+        <div class="modal-body">
+          <div class="modal-form">
+            <form action="">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Ваше имя">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Ваш номер">
+              </div>
+              <div class="form-group form-group_submit">
+                <input type="submit" class="btn btn-blue" value="Отправить">
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
