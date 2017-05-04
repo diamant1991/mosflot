@@ -31,12 +31,16 @@
   .close-nav {
     display: none; }
   .header.fixed .header-tel:before {
-    background: url(../img/call-answer-blue.png) no-repeat; } }
+    background: url(../img/call-answer-blue.png) no-repeat; }
+  .text-list .col-md-4:nth-child(3n+1) {
+    clear: both; } }
 
 @media (max-width: 991px) {
   .thumb-item {
     margin: 0;
     font-size: 16px; }
+  .card-adv__line {
+    display: block; }
   .video-block {
     height: 400px; }
   .gps-link {
@@ -142,9 +146,17 @@
 @media (max-width: 767px) {
   .main-slider {
     min-height: 100%; }
+  .card-info__item {
+    margin-bottom: 20px; }
+  .page-header {
+    margin-bottom: 20px; }
   .card-zone__label .zone-list__info__item {
     float: none;
     margin-left: 0 !important; }
+  .card-adv {
+    padding-bottom: 0; }
+  .card-3d {
+    padding-bottom: 30px; }
   .zone-tab {
     text-align: center; }
     .zone-tab .pull-right {

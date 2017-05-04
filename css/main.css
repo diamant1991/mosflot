@@ -1338,7 +1338,8 @@ h5 {
   color: #000; }
 
 .products-btn {
-  padding: 30px 0; }
+  padding: 30px 0;
+  text-align: center; }
 
 .btn {
   display: inline-block;
@@ -2432,7 +2433,8 @@ img {
 .view-column {
   width: 18px;
   height: 18px;
-  margin-left: 20px; }
+  margin-left: 20px;
+  background: url(../img/column.png) no-repeat; }
   .view-column.active {
     background: url(../img/column-active.png) no-repeat; }
 
@@ -2705,7 +2707,7 @@ img {
   font-size: 13px;
   padding: 25px 85px;
   padding-bottom: 45px;
-  border-bottom: 1px solid #ebf0f4;
+  border-bottom: 2px solid #ebf0f4;
   line-height: 1.5; }
   .card-zone__text p {
     margin-bottom: 20px; }
@@ -2723,7 +2725,7 @@ img {
 
 .card-zone__area {
   padding: 40px 15px;
-  border-bottom: 1px solid #ebf0f4; }
+  border-bottom: 2px solid #ebf0f4; }
   .card-zone__area h2 {
     text-align: center; }
 
@@ -2842,8 +2844,13 @@ img {
   .event-column .event-list-wrapp {
     margin-top: 40px; }
 
-.card-zone__area {
-  border-bottom: 1px solid #ebf0f4; }
+.card-3d {
+  border-bottom: 2px solid #ebf0f4;
+  padding-bottom: 70px;
+  margin-left: -15px;
+  margin-right: -15px;
+  padding-left: 15px;
+  padding-right: 15px; }
 
 .zone-map__small {
   height: 200px;
@@ -2886,7 +2893,56 @@ img {
   padding-top: 10px; }
 
 .block-carousel {
-  padding: 40px 0; }
+  padding: 40px 0;
+  position: relative; }
+  .block-carousel .owl-next {
+    text-indent: -9999px;
+    position: absolute;
+    z-index: 3;
+    right: 0;
+    top: 50%;
+    width: 35px;
+    height: 90px;
+    margin-top: -45px;
+    background: #eef1f4; }
+    .block-carousel .owl-next:after {
+      content: "";
+      display: block;
+      width: 8px;
+      height: 18px;
+      position: absolute;
+      z-index: 2;
+      left: 50%;
+      top: 50%;
+      margin-left: -4px;
+      margin-top: -9px;
+      background: url(../img/card-arrow-next.png) no-repeat; }
+    .block-carousel .owl-next.disabled {
+      display: none; }
+  .block-carousel .owl-prev {
+    text-indent: -9999px;
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    top: 50%;
+    width: 35px;
+    height: 90px;
+    margin-top: -45px;
+    background: #eef1f4; }
+    .block-carousel .owl-prev:after {
+      content: "";
+      display: block;
+      width: 8px;
+      height: 18px;
+      position: absolute;
+      z-index: 2;
+      left: 50%;
+      top: 50%;
+      margin-left: -4px;
+      margin-top: -9px;
+      background: url(../img/card-arrow-prev.png) no-repeat; }
+    .block-carousel .owl-prev.disabled {
+      display: none; }
 
 .block-carousel__item {
   height: 200px;
@@ -2916,3 +2972,191 @@ img {
 .news_inter {
   margin-top: 60px;
   padding-top: 45px; }
+
+.block-carousel {
+  border-bottom: 2px solid #ebf0f4; }
+
+.menu-block {
+  border-bottom: 2px solid #ebf0f4;
+  text-align: center;
+  padding: 40px 15px; }
+  .menu-block h2 {
+    margin-bottom: 50px; }
+
+.menu-wrapp {
+  margin-left: -10px; }
+
+.menu-item {
+  padding-left: 10px;
+  padding-bottom: 10px; }
+  .menu-item a {
+    color: #fff; }
+
+.menu-img {
+  height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  position: relative; }
+  .menu-img:before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); }
+
+.menu-text {
+  position: relative;
+  z-index: 2;
+  font-size: 16px;
+  font-family: "RalewayBold"; }
+
+.checkbox-item {
+  font-size: 13px;
+  font-family: "RalewayMedium";
+  color: #0d7ad6;
+  padding-left: 5px;
+  padding-right: 5px; }
+  .checkbox-item span {
+    color: #000; }
+
+.checkbox {
+  vertical-align: top;
+  margin: 0 3px 0 0;
+  width: 17px;
+  height: 17px; }
+
+.checkbox + label {
+  cursor: pointer; }
+
+.checkbox:not(checked) {
+  position: absolute;
+  opacity: 0; }
+
+.checkbox:not(checked) + label {
+  position: relative;
+  padding: 0 0 0 30px;
+  font-family: "RalewayMedium";
+  display: block; }
+
+.checkbox:not(checked) + label:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  background: url(../img/checkbox.png) no-repeat; }
+
+.checkbox:checked + label:before {
+  background: url(../img/checkbox-active.png) no-repeat; }
+
+.checkbox-item + .checkbox-item {
+  margin-top: 25px; }
+
+.sidebar-event-price {
+  padding-left: 20px;
+  padding-right: 20px; }
+  .sidebar-event-price .sidebar-title {
+    margin-bottom: 10px; }
+  .sidebar-event-price .btn-dark-blue {
+    width: 100%; }
+
+.sidebar-event-price__item {
+  font-size: 16px;
+  font-family: "RalewaySemiBold"; }
+
+.sidebar-item__info {
+  margin-top: 10px;
+  font-size: 12px; }
+
+.text-list {
+  overflow: hidden; }
+
+.card-info {
+  margin-top: 40px; }
+
+.card-info__title {
+  font-size: 16px;
+  font-family: "RalewayMedium";
+  margin-bottom: 5px; }
+
+.card-info__table {
+  font-size: 12px;
+  font-family: "RalewayMedium"; }
+  .card-info__table td {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    vertical-align: middle; }
+    .card-info__table td:first-child {
+      text-align: left;
+      color: #6f858c;
+      padding-right: 12px; }
+    .card-info__table td:last-child {
+      text-align: right;
+      padding-left: 12px; }
+
+.review-mrg {
+  margin-top: 60px; }
+
+.card-adv__item {
+  margin-bottom: 10px; }
+
+.card-adv__icon {
+  width: 30px;
+  text-align: center; }
+
+.table-top {
+  display: table-cell;
+  vertical-align: top; }
+
+.flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
+
+.card-adv {
+  padding: 40px 0;
+  padding-bottom: 30px; }
+  .card-adv h2 {
+    margin-bottom: 45px; }
+
+.card-3d__text {
+  font-size: 12px;
+  margin-top: 20px;
+  line-height: 1.5; }
+  .card-3d__text a {
+    font-family: "RalewayBold";
+    color: #0d7ad6; }
+    .card-3d__text a:hover {
+      text-decoration: underline; }
+
+.print-btn {
+  width: 22px;
+  height: 22px;
+  background: url(../img/print.png) no-repeat; }
+
+.pdf-btn {
+  width: 16px;
+  height: 19px;
+  margin-left: 50px;
+  background: url(../img/pdf.png) no-repeat; }
+
+.view-block_ship {
+  padding-right: 60px; }
