@@ -11,6 +11,10 @@
     font-size: 13px; }
   .card-zone__label .zone-list__info__item + .zone-list__info__item {
     margin-left: 15px; }
+  .zone-line .zone-list__btn .btn-blue {
+    float: left; }
+  .zone-line .zone-list__btn .btn-white {
+    float: left; }
   .zone-list {
     margin-left: -15px; }
   .zone-list__item {
@@ -26,6 +30,8 @@
     margin: auto; } }
 
 @media (min-width: 992px) {
+  .filter-checkbox-item {
+    width: 20%; }
   .toggle-btn {
     display: none; }
   .close-nav {
@@ -39,6 +45,16 @@
   .thumb-item {
     margin: 0;
     font-size: 16px; }
+  .zone-line__descr {
+    padding-left: 0;
+    padding-top: 20px; }
+  .filter-checkbox-item {
+    margin-bottom: 20px; }
+  .photo-price {
+    padding-left: 0;
+    padding-right: 0; }
+  .benefit-name {
+    margin-bottom: 20px; }
   .card-adv__line {
     display: block; }
   .video-block {
@@ -146,6 +162,10 @@
 @media (max-width: 767px) {
   .main-slider {
     min-height: 100%; }
+  .walks-column {
+    display: block !important; }
+  .walks-list {
+    display: none !important; }
   .card-info__item {
     margin-bottom: 20px; }
   .page-header {

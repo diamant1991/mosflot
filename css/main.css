@@ -2637,6 +2637,12 @@ img {
   .link:hover {
     text-decoration: none; }
 
+.link-dot {
+  color: #0088ed;
+  border-bottom: 1px dotted #0088ed; }
+  .link-dot:hover {
+    border-bottom-color: transparent; }
+
 .zone-list__text {
   height: 195px;
   overflow: hidden; }
@@ -3160,3 +3166,90 @@ img {
 
 .view-block_ship {
   padding-right: 60px; }
+
+.benefit {
+  text-align: center;
+  margin-bottom: 30px; }
+  .benefit-img {
+    height: 40px; }
+  .benefit-name {
+    margin-top: 10px;
+    color: #000;
+    font-size: 13px;
+    font-family: "RalewaySemiBold"; }
+
+.event-org_column {
+  margin-left: -10px;
+  padding-top: 30px;
+  padding-bottom: 15px; }
+  .event-org_column .news-item {
+    margin-bottom: 15px; }
+  .event-org_column .news-text {
+    margin-bottom: 15px; }
+
+.text-list_service {
+  font-size: 12px; }
+  .text-list_service p {
+    margin-bottom: 5px; }
+
+.photo-price {
+  font-size: 13px;
+  font-family: "RalewaySemiBold";
+  padding-left: 65px;
+  padding-right: 65px;
+  margin-top: 25px; }
+  .photo-price b {
+    font-size: 18px; }
+
+.sidebar-title_service {
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px; }
+  .sidebar-title_service b {
+    font-size: 18px;
+    color: #e47b0b; }
+
+.text-left {
+  text-align: left; }
+
+.filter-checkbox {
+  padding: 30px 0; }
+
+.zone-line {
+  padding: 35px 25px;
+  position: relative;
+  text-align: left; }
+  .zone-line .zone-list__info {
+    padding: 35px 0; }
+  .zone-line h4 {
+    font-size: 18px;
+    font-family: "RalewayBold";
+    margin-bottom: 0;
+    text-transform: uppercase;
+    margin-right: 15px; }
+  .zone-line .zone-label {
+    margin-bottom: 0; }
+  .zone-line .zone-list__text {
+    height: 150px; }
+  .zone-line .zone-list__img {
+    height: 325px; }
+  .zone-line .zone-list__info__item {
+    margin-right: 15px; }
+  .zone-line .zone-list__info__item + .zone-list__info__item {
+    margin-top: 0; }
+  .zone-line .zone-list__btn .btn-white {
+    margin-left: 20px; }
+  .zone-line + .zone-line {
+    border-top: 2px solid #ebf0f4; }
+
+.zone-line__descr {
+  padding-left: 30px; }
+
+.today-price {
+  font-size: 18px;
+  font-family: "RalewayBold"; }
+
+.prev-price {
+  text-decoration: line-through;
+  margin-left: 10px;
+  color: #b7b5b5; }
