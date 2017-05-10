@@ -45,6 +45,9 @@
   .thumb-item {
     margin: 0;
     font-size: 16px; }
+  .card-zone__info .zone-list__info__item {
+    display: block;
+    margin-left: 0 !important; }
   .zone-line__descr {
     padding-left: 0;
     padding-top: 20px; }
@@ -164,6 +167,12 @@
     min-height: 100%; }
   .walks-column {
     display: block !important; }
+  .berths-list {
+    padding-left: 10px;
+    padding-right: 10px; }
+  .card-zone__info {
+    padding-left: 10px;
+    padding-right: 10px; }
   .walks-list {
     display: none !important; }
   .card-info__item {

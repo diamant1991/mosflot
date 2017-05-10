@@ -1123,7 +1123,7 @@ i {
 
 .header-inner {
   position: relative;
-  z-index: 3;
+  z-index: 10;
   color: #000;
   padding-bottom: 10px;
   background: #fff;
@@ -2818,6 +2818,8 @@ img {
   color: #6f858c;
   padding-left: 65px;
   padding-right: 65px; }
+  .card-zone__info.text-container {
+    color: #000; }
   .card-zone__info > ul > li {
     padding-left: 5px;
     position: relative; }
@@ -2866,7 +2868,7 @@ img {
 
 .card-zone__gps {
   padding: 40px 10px;
-  border-bottom: 1px solid #ebf0f4;
+  border-bottom: 2px solid #ebf0f4;
   text-align: center; }
   .card-zone__gps h2 {
     margin-bottom: 45px; }
@@ -3253,3 +3255,16 @@ img {
   text-decoration: line-through;
   margin-left: 10px;
   color: #b7b5b5; }
+
+.berths-list {
+  padding-top: 40px;
+  margin-top: 60px; }
+
+.card-zone__info .zone-list__info__item + .zone-list__info__item {
+  margin-top: 0;
+  margin-left: 15px; }
+
+.card-zone__info .zone-list__info {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 50px; }
