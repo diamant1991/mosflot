@@ -9,6 +9,17 @@
     width: 580px; }
   .bottom-menu a {
     font-size: 13px; }
+  .schedule {
+    padding-left: 20px;
+    padding-right: 20px; }
+  .rest-menu {
+    padding-left: 20px;
+    padding-right: 20px; }
+  .walks-route__block:after {
+    content: none; }
+  .walks-descr {
+    padding-left: 20px;
+    padding-right: 20px; }
   .card-zone__label .zone-list__info__item + .zone-list__info__item {
     margin-left: 15px; }
   .zone-line .zone-list__btn .btn-blue {
@@ -51,6 +62,17 @@
   .zone-line__descr {
     padding-left: 0;
     padding-top: 20px; }
+  .walks-info {
+    display: block; }
+  .table-item {
+    overflow: auto; }
+  .schedule__table {
+    table-layout: fixed;
+    width: 700px; }
+  .walks-route {
+    display: block; }
+  .walks-info__item {
+    margin-bottom: 10px; }
   .filter-checkbox-item {
     margin-bottom: 20px; }
   .photo-price {
@@ -170,6 +192,8 @@
   .berths-list {
     padding-left: 10px;
     padding-right: 10px; }
+  .walks-info {
+    font-size: 13px; }
   .card-zone__info {
     padding-left: 10px;
     padding-right: 10px; }
@@ -182,6 +206,11 @@
   .card-zone__label .zone-list__info__item {
     float: none;
     margin-left: 0 !important; }
+  .schedule,
+  .rest-menu,
+  .walks-descr {
+    padding-left: 10px;
+    padding-right: 10px; }
   .card-adv {
     padding-bottom: 0; }
   .card-3d {

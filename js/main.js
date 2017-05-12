@@ -69,7 +69,25 @@ $('#block-carousel').owlCarousel({
         }
     }
 })
-
+$('.block-carousel__owl').owlCarousel({
+    loop:false,
+    dots: false,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        450:{
+            items:2
+        },
+        992:{
+            items:3
+        },
+        1200:{
+            items:4
+        }
+    }
+})
 $('.view-btn').click(function() {
   $('.view-btn').removeClass('active');
   $(this).addClass('active')
@@ -242,3 +260,16 @@ $('.toggle-filter').click(function(event) {
     sidebar.slideUp(250)
   }
 });
+
+$.fn.equivalent = function (){
+  var $blocks = $(this),
+      maxH    = $blocks.eq(0).height(); 
+  $blocks.each(function(){
+      maxH = ( $(this).height() > maxH ) ? $(this).height() : maxH;
+  });
+
+  $blocks.height(maxH); 
+}
+if(window.matchMedia('(min-width: 992px)').matches){
+  $('.walks-route__block').equivalent();
+}

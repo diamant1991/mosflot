@@ -3268,3 +3268,126 @@ img {
   padding-top: 0;
   padding-bottom: 0;
   margin-bottom: 50px; }
+
+.walks-info {
+  margin-top: 40px;
+  margin-bottom: 50px;
+  font-size: 15px;
+  font-family: "RalewayMedium"; }
+  .walks-info__icon {
+    width: 45px; }
+
+.zone-map_walks {
+  text-align: center; }
+
+.walks-descr {
+  padding: 40px 55px;
+  border-bottom: 2px solid #ebf0f4; }
+  .walks-descr h2 {
+    text-align: center; }
+
+.walks-route {
+  margin-top: 40px; }
+  .walks-route__block {
+    position: relative; }
+    .walks-route__block:last-child:after {
+      content: none; }
+    .walks-route__block:after {
+      content: "";
+      display: block;
+      width: 113px;
+      height: 204px;
+      position: absolute;
+      z-index: 0;
+      right: -95px;
+      top: 50%;
+      margin-top: -102px;
+      background: url(../img/route-arrow.png) no-repeat; }
+    .walks-route__block__title {
+      padding-left: 25px;
+      font-size: 15px;
+      color: #6f858c;
+      font-family: "RalewayMedium";
+      margin-bottom: 20px; }
+  .walks-route__icon {
+    width: 25px;
+    padding-top: 2px; }
+  .walks-route__item {
+    margin-bottom: 25px;
+    position: relative;
+    z-index: 2; }
+  .walks-route__center-title {
+    margin-bottom: 25px;
+    font-size: 15px;
+    color: #6f858c;
+    font-family: "RalewaySemiBold";
+    line-height: 1.2;
+    position: relative;
+    z-index: 2; }
+
+.schedule {
+  padding: 40px 85px;
+  border-bottom: 2px solid #ebf0f4; }
+  .schedule h2 {
+    text-align: center; }
+  .schedule__table {
+    width: 100%;
+    font-size: 13px;
+    font-family: "RalewayMedium"; }
+    .schedule__table tbody td {
+      font-size: 15px; }
+      .schedule__table tbody td:first-child {
+        font-size: 13px; }
+    .schedule__table td {
+      vertical-align: middle;
+      padding: 15px 15px;
+      border: 1px solid #d9e1e8; }
+      .schedule__table td:first-child {
+        width: 80px; }
+
+.rest-menu {
+  padding: 40px 80px; }
+  .rest-menu h2 {
+    text-align: center; }
+  .rest-menu h4 {
+    text-align: center; }
+
+.menu-table {
+  width: 100%; }
+  .menu-table:last-child tbody tr:last-child td {
+    border-bottom: 0; }
+  .menu-table thead td {
+    font-size: 15px;
+    padding-top: 25px;
+    color: #6f858c;
+    font-family: "RalewaySemiBold"; }
+  .menu-table tbody td {
+    font-size: 13px;
+    font-family: "RalewayMedium";
+    width: 15%; }
+    .menu-table tbody td:first-child {
+      width: 70%; }
+    .menu-table tbody td:nth-child(2) {
+      text-align: center; }
+    .menu-table tbody td:last-child {
+      text-align: right; }
+    .menu-table tbody td span {
+      font-family: "RalewayLight"; }
+    .menu-table tbody td:last-child {
+      color: #0d7ad6; }
+  .menu-table tbody tr:last-child td {
+    padding-bottom: 25px;
+    border-bottom: 1px solid #000; }
+  .menu-table td {
+    vertical-align: middle;
+    padding: 15px 0; }
+
+.walk-price {
+  text-align: center;
+  font-size: 13px; }
+  .walk-price__item {
+    margin-bottom: 25px; }
+  .walk-price b {
+    font-size: 15px;
+    margin-left: 10px;
+    margin-right: 10px; }
