@@ -69,6 +69,29 @@ $('#block-carousel').owlCarousel({
         }
     }
 })
+$('.certificates-carousel').owlCarousel({
+  loop:false,
+  dots: false,
+  nav:true,
+  margin: 15,
+  responsive:{
+      0:{
+          items:1
+      },
+      450:{
+          items:2
+      },
+      767:{
+          items:3
+      },
+      992:{
+          items:4
+      },
+      1200:{
+          items:5
+      }
+  }
+})
 $('.block-carousel__owl').owlCarousel({
     loop:false,
     dots: false,
@@ -88,6 +111,19 @@ $('.block-carousel__owl').owlCarousel({
         }
     }
 })
+
+$(".fancybox").fancybox({
+    padding : 0,
+    openEffect  : 'elastic',
+    closeEffect : 'elastic',
+    helpers: {
+      overlay: {
+        locked: false
+      }
+    }
+  });
+
+
 $('.view-btn').click(function() {
   $('.view-btn').removeClass('active');
   $(this).addClass('active')
