@@ -45,6 +45,8 @@
     margin: auto; } }
 
 @media (min-width: 992px) {
+  .modal-dialog_review {
+    width: 950px; }
   .filter-checkbox-item {
     width: 20%; }
   .toggle-btn {
@@ -60,6 +62,13 @@
   .thumb-item {
     margin: 0;
     font-size: 16px; }
+  .article-social {
+    float: none !important;
+    text-align: center; }
+  .article-btn {
+    float: none !important;
+    text-align: center;
+    margin-top: 20px; }
   .contact-info {
     padding: 15px; }
   .contact-form {
@@ -218,13 +227,44 @@
 @media (max-width: 767px) {
   .main-slider {
     min-height: 100%; }
+  .filter-search {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 15px;
+    padding-right: 15px; }
+  .filter-search__submit {
+    right: 15px; }
   .walks-column {
     display: block !important; }
+  .filter_photo {
+    width: 100%; }
+  .news-similar__header h4,
+  .news-similar__header h2 {
+    display: block;
+    margin-left: 0;
+    margin-right: 0; }
   .berths-list {
     padding-left: 10px;
     padding-right: 10px; }
   .walks-info {
     font-size: 13px; }
+  .article-text {
+    padding: 15px; }
+  .article-bottom {
+    padding: 15px;
+    padding-top: 0; }
+  .form-group__name {
+    width: 100%;
+    margin-bottom: 20px; }
+  .form-group__tel {
+    width: 100%; }
+  .form-group__rating {
+    float: none;
+    margin-bottom: 20px; }
+  .form-group__submit-review {
+    float: none; }
   .about-text__img {
     padding-right: 0;
     width: 100%;
@@ -420,6 +460,13 @@
     height: 250px; }
   .event-list-wrapp .col-md-2 {
     width: 50%; }
+  .col-exs-12 {
+    width: 100%; }
+  .article-btn__item {
+    width: 100%; }
+    .article-btn__item.btn-blue {
+      margin-left: 0;
+      margin-top: 20px; }
   .employees-item {
     padding-left: 5px;
     padding-right: 5px;

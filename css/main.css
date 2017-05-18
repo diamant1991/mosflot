@@ -1668,6 +1668,9 @@ h5 {
   margin-top: 60px;
   padding-top: 35px;
   border-bottom: 2px solid #ebf0f4; }
+  .photo-block_inner {
+    padding-top: 0;
+    margin-top: 0; }
   .photo-block .photo-text {
     font-size: 24px; }
   .photo-block h2 {
@@ -2265,6 +2268,15 @@ img {
   position: relative;
   z-index: 2;
   background: #fff; }
+  .sidebar-menu {
+    font-size: 13px;
+    font-family: "RalewayMedium"; }
+    .sidebar-menu li + li {
+      margin-top: 25px; }
+    .sidebar-menu a {
+      color: #000; }
+      .sidebar-menu a:hover {
+        text-decoration: underline; }
 
 .footer-inner {
   color: #2f5779; }
@@ -2475,6 +2487,8 @@ img {
   width: 100%;
   cursor: pointer;
   text-align: center; }
+  .toggle-filter_photo {
+    margin-bottom: 20px; }
 
 .modal {
   text-align: center; }
@@ -2495,6 +2509,8 @@ img {
   max-width: 310px;
   margin: auto;
   padding: 65px 0; }
+  .modal-form_review {
+    max-width: 690px; }
 
 .modal {
   position: fixed;
@@ -2578,6 +2594,27 @@ img {
   font-size: 13px;
   font-family: "RalewayRegular";
   color: #000; }
+  .form-control_review {
+    height: 175px;
+    resize: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: "RalewayRegular"; }
+
+.form-group__rating {
+  float: left;
+  padding-top: 20px; }
+
+.form-group__submit-review {
+  float: right; }
+
+.form-group__name {
+  float: left;
+  width: 46%; }
+
+.form-group__tel {
+  float: right;
+  width: 46%; }
 
 .form-group + .form-group {
   margin-top: 25px; }
@@ -3744,3 +3781,73 @@ blockquote {
       margin-bottom: 0; }
   .requisites-list {
     margin-top: 50px; }
+
+.modal-rating .b-review__form--star {
+  font-size: 18px;
+  margin-right: 0;
+  margin-left: 15px; }
+
+.news-similar {
+  padding-top: 35px;
+  margin-top: 60px; }
+  .news-similar__header {
+    text-align: center; }
+    .news-similar__header h4 {
+      margin-left: 35px;
+      opacity: 0.5; }
+
+.article-text {
+  padding: 30px; }
+  .article-text img {
+    margin-right: 20px; }
+
+.article-bottom {
+  padding: 30px;
+  padding-top: 0; }
+
+.article-social__btn {
+  color: #d9e1e8;
+  font-size: 20px; }
+  .article-social__btn + .article-social__btn {
+    margin-left: 20px; }
+  .article-social__btn:hover {
+    color: #000; }
+
+.article-btn__item {
+  padding: 10px;
+  min-width: inherit;
+  font-size: 13px; }
+  .article-btn__item.btn-blue {
+    border: 1px solid #4679d2;
+    margin-left: 5px; }
+
+.filter-search {
+  width: 185px;
+  margin-right: 50px;
+  margin-top: 15px;
+  position: relative; }
+  .filter-search__input {
+    display: block;
+    width: 100%;
+    height: 30px;
+    outline: 0;
+    border: 0;
+    border-bottom: 1px solid #ced5dd;
+    padding-right: 20px; }
+  .filter-search__submit {
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: 50%;
+    margin-top: -8px;
+    background: none;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    color: #ced5dd; }
+
+.dark-caret {
+  width: 6px;
+  height: 4px;
+  background: url(../img/dark-caret.png) no-repeat;
+  margin-left: 5px; }
