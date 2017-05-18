@@ -3851,3 +3851,17 @@ blockquote {
   height: 4px;
   background: url(../img/dark-caret.png) no-repeat;
   margin-left: 5px; }
+
+.text-walks {
+  margin-top: 30px;
+  font-size: 13px;
+  font-family: "RalewayMedium";
+  padding-left: 50px;
+  padding-right: 50px; }
+  .text-walks__item {
+    margin-bottom: 15px; }
+    .text-walks__item:nth-child(3n+1) {
+      clear: both; }
+  .text-walks__icon {
+    width: 35px;
+    text-align: center; }
