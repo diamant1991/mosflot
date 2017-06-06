@@ -119,22 +119,54 @@
             </div>
             <div class="sidebar-item sidebar-item_event">
               <div class="sidebar-title">Сопутствующие услуги</div>
-              <div class="checkbox-list">
+              <div class="checkbox-list checkbox-list_service">
                 <div class="checkbox-item">
                   <input type="checkbox" class="checkbox" id="checkbox" name="event">
                   <label for="checkbox"><span>Фуршет</span> +2000 руб. (+10% обслуживание)</label>
+                  <div class="tooltip">
+                    <div class="tooltip-icon"></div>
+                    <div class="tooltip-text">
+                      <div class="table-block">
+                        <div class="block-vertical">Подается в формате шведского стола, при этом ассортимент блюд разнообразен.</div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div class="checkbox-item">
                   <input type="checkbox" class="checkbox" id="checkbox2" name="event">
                   <label for="checkbox2"><span>Банкет</span> +2500 руб. (+10% обслуживание)</label>
+                  <div class="tooltip">
+                    <div class="tooltip-icon"></div>
+                    <div class="tooltip-text">
+                      <div class="table-block">
+                        <div class="block-vertical">Подается в формате шведского стола, при этом ассортимент блюд разнообразен.</div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div class="checkbox-item">
                   <input type="checkbox" class="checkbox" id="checkbox3" name="event">
                   <label for="checkbox3"><span>Фейерверки и салюты</span> +2500 руб. </label>
+                  <div class="tooltip">
+                    <div class="tooltip-icon"></div>
+                    <div class="tooltip-text">
+                      <div class="table-block">
+                        <div class="block-vertical">Подается в формате шведского стола, при этом ассортимент блюд разнообразен.</div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div class="checkbox-item">
                   <input type="checkbox" class="checkbox" id="checkbox4" name="event">
                   <label for="checkbox4"><span>Профессиональная фотосъемка</span> +2500 руб. </label>
+                  <div class="tooltip">
+                    <div class="tooltip-icon"></div>
+                    <div class="tooltip-text">
+                      <div class="table-block">
+                        <div class="block-vertical">Подается в формате шведского стола, при этом ассортимент блюд разнообразен.</div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -144,7 +176,7 @@
                   <div class="pull-left">Стоимость</div>
                   <div class="pull-right">от <span class="sidebar-event-price__item">35 000 руб.</span></div>
                 </div>
-                <a href="#" class="btn btn-dark-blue">Заказать</a>
+                <a href="#" class="btn btn-dark-blue" data-toggle="modal" data-target="#modal-event">Заказать</a>
               </div>
               <div class="sidebar-item__info">
                 *Расчет является предварительным <br>
@@ -755,6 +787,32 @@
         		</div>
         	</div>
         </footer>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="modal-event" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="modal-form">
+            <form action="">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Имя">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Телефон">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Почта">
+              </div>
+              <div class="form-group form-group_submit">
+                <input type="submit" class="btn btn-blue" value="Отправить">
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
   </div>

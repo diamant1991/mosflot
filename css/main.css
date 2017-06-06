@@ -3152,6 +3152,8 @@ img {
   width: 90px;
   text-align: center;
   padding: 10px 0; }
+  .sidebar-item_event_count:hover {
+    border-color: #4679d2; }
 
 .sidebar-item_event_name {
   padding-top: 10px; }
@@ -3285,9 +3287,59 @@ img {
   font-family: "RalewayMedium";
   color: #0d7ad6;
   padding-left: 5px;
-  padding-right: 5px; }
+  padding-right: 5px;
+  position: relative; }
   .checkbox-item span {
     color: #000; }
+
+.tooltip-icon {
+  width: 19px;
+  height: 19px;
+  cursor: pointer;
+  background: url(../img/info.png) no-repeat; }
+  .tooltip-icon:hover + .tooltip-text {
+    opacity: 1;
+    visibility: visible;
+    right: -280px; }
+
+.tooltip {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  top: 0; }
+
+.tooltip-text {
+  position: absolute;
+  z-index: 3;
+  right: -300px;
+  width: 260px;
+  height: 140px;
+  background: #eef1f4;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 13px;
+  color: #000;
+  font-family: "RalewaySemiBold";
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 10px 25px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 10px 25px 0px rgba(0, 0, 0, 0.2);
+  top: 50%;
+  margin-top: -70px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out; }
+  .tooltip-text:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    width: 39px;
+    height: 38px;
+    left: -14px;
+    margin-top: -20px;
+    background: url(../img/tooltip.png) no-repeat; }
 
 .checkbox {
   vertical-align: top;
@@ -3865,3 +3917,6 @@ blockquote {
   .text-walks__icon {
     width: 35px;
     text-align: center; }
+
+.checkbox-list_service .checkbox-item {
+  padding-right: 20px; }
