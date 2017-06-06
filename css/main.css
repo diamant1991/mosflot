@@ -1237,6 +1237,133 @@ ul.bxslider {
   background: #000;
   background: rgba(0, 0, 0, 0.8); }
 
+/*************** SCROLLBAR BASE CSS ***************/
+.scroll-wrapper {
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: relative; }
+
+.scroll-wrapper > .scroll-content {
+  border: none !important;
+  -webkit-box-sizing: content-box !important;
+  -moz-box-sizing: content-box !important;
+  box-sizing: content-box !important;
+  height: auto;
+  left: 0;
+  margin: 0;
+  max-height: none;
+  max-width: none !important;
+  overflow: scroll !important;
+  padding: 0;
+  position: relative !important;
+  top: 0;
+  width: auto !important; }
+
+.scroll-wrapper > .scroll-content::-webkit-scrollbar {
+  height: 0;
+  width: 0; }
+
+.scroll-element {
+  display: none; }
+
+.scroll-element, .scroll-element div {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box; }
+
+.scroll-element.scroll-x.scroll-scrollx_visible,
+.scroll-element.scroll-y.scroll-scrolly_visible {
+  display: block; }
+
+.scroll-element.scroll-x.scroll-scrollx_visible {
+  display: none; }
+
+.scroll-element .scroll-bar,
+.scroll-element .scroll-arrow {
+  cursor: default; }
+
+.scroll-textarea {
+  border: 1px solid #cccccc;
+  border-top-color: #999999; }
+
+.scroll-textarea > .scroll-content {
+  overflow: hidden !important; }
+
+.scroll-textarea > .scroll-content > textarea {
+  border: none !important;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 100% !important;
+  margin: 0;
+  max-height: none !important;
+  max-width: none !important;
+  overflow: scroll !important;
+  outline: none;
+  padding: 2px;
+  position: relative !important;
+  top: 0;
+  width: 100% !important; }
+
+.scroll-textarea > .scroll-content > textarea::-webkit-scrollbar {
+  height: 0;
+  width: 0; }
+
+/*************** SIMPLE INNER SCROLLBAR ***************/
+.scrollbar-inner > .scroll-element,
+.scrollbar-inner > .scroll-element div {
+  border: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  z-index: 10; }
+
+.scrollbar-inner > .scroll-element div {
+  display: block;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%; }
+
+.scrollbar-inner > .scroll-element.scroll-x {
+  bottom: 2px;
+  height: 8px;
+  left: 0;
+  width: 100%; }
+
+.scrollbar-inner > .scroll-element.scroll-y {
+  height: 100%;
+  right: 2px;
+  top: 0;
+  width: 3px; }
+
+.scrollbar-inner > .scroll-element .scroll-element_outer {
+  overflow: hidden; }
+
+.scrollbar-inner > .scroll-element .scroll-element_outer,
+.scrollbar-inner > .scroll-element .scroll-element_track,
+.scrollbar-inner > .scroll-element .scroll-bar {
+  -webkit-border-radius: 8px;
+  border-radius: 8px; }
+
+.scrollbar-inner > .scroll-element .scroll-element_track {
+  background-color: #eef1f4; }
+
+.scrollbar-inner > .scroll-element .scroll-bar {
+  background-color: #4679d2; }
+
+.scrollbar-inner > .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_track {
+  left: -12px; }
+
+.scrollbar-inner > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_track {
+  top: -12px; }
+
+.scrollbar-inner > .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_size {
+  left: -12px; }
+
+.scrollbar-inner > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_size {
+  top: -12px; }
+
 body {
   font-size: 14px;
   font-family: "RalewayRegular";
@@ -1622,6 +1749,8 @@ h5 {
   margin-bottom: 15px;
   background: #0d7ad6;
   line-height: 68px; }
+  .event-icon:hover {
+    background: #465f75; }
   .event-icon img {
     vertical-align: middle; }
 
@@ -3305,15 +3434,19 @@ img {
 .tooltip {
   position: absolute;
   z-index: 2;
-  right: 0;
+  right: 20px;
   top: 0; }
+
+.top {
+  display: inline-block;
+  vertical-align: top; }
 
 .tooltip-text {
   position: absolute;
-  z-index: 3;
-  right: -300px;
-  width: 260px;
-  height: 140px;
+  z-index: 10;
+  width: 320px;
+  height: auto;
+  padding: 15px;
   background: #eef1f4;
   padding-left: 25px;
   padding-right: 25px;
@@ -3324,12 +3457,15 @@ img {
   border-radius: 5px;
   -webkit-box-shadow: 1px 10px 25px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 1px 10px 25px 0px rgba(0, 0, 0, 0.2);
-  top: 50%;
-  margin-top: -70px;
   opacity: 0;
   visibility: hidden;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out; }
+  .tooltip-text.active {
+    opacity: 1;
+    visibility: visible; }
+  .tooltip-text h5 {
+    margin-bottom: 5px; }
   .tooltip-text:before {
     content: "";
     position: absolute;
@@ -3340,6 +3476,13 @@ img {
     left: -14px;
     margin-top: -20px;
     background: url(../img/tooltip.png) no-repeat; }
+
+.tooltip-img {
+  width: 100px; }
+
+.tooltip-info {
+  width: 165px;
+  padding-left: 10px; }
 
 .checkbox {
   vertical-align: top;
@@ -3368,6 +3511,9 @@ img {
   width: 18px;
   height: 18px;
   background: url(../img/checkbox.png) no-repeat; }
+
+.checkbox:checked + label {
+  font-family: "RalewayBold"; }
 
 .checkbox:checked + label:before {
   background: url(../img/checkbox-active.png) no-repeat; }
@@ -3918,5 +4064,8 @@ blockquote {
     width: 35px;
     text-align: center; }
 
-.checkbox-list_service .checkbox-item {
-  padding-right: 20px; }
+.checkbox-list_service {
+  max-height: 145px;
+  overflow: auto; }
+  .checkbox-list_service .checkbox-item {
+    padding-right: 40px; }
