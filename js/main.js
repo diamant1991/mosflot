@@ -50,6 +50,16 @@ if($('.card-zone__carousel').length){
       }
   })
 }
+$('.products-img__carousel').owlCarousel({
+    loop:true,
+    nav:true,
+    dots: false,
+    responsive:{
+      0:{
+          items:1
+      }
+    }
+})
 $('#block-carousel').owlCarousel({
     loop:false,
     dots: false,

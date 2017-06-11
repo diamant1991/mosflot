@@ -45,6 +45,10 @@
     margin: auto; } }
 
 @media (min-width: 992px) {
+  .photo-item:hover .photo-item__img {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2); }
   .modal-dialog_review {
     width: 950px; }
   .filter-checkbox-item {

@@ -1635,7 +1635,8 @@ h5 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
-  height: 200px; }
+  height: 200px;
+  position: relative; }
 
 .products-title {
   white-space: nowrap;
@@ -1643,7 +1644,8 @@ h5 {
   padding: 20px 0;
   font-family: "RalewayMedium";
   font-size: 16px;
-  color: #000; }
+  color: #000;
+  text-align: center; }
   .products-title:after {
     content: "";
     display: block;
@@ -1775,19 +1777,38 @@ h5 {
 .photo-item {
   color: #fff;
   height: 200px;
+  position: relative;
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: cover;
   padding: 20px;
+  overflow: hidden;
   border: 1px solid #fff; }
+
+.photo-item__img {
+  position: absolute;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat; }
 
 .photo-date {
   font-family: "FontfabricMullerRegular";
-  margin-bottom: 25px; }
+  margin-bottom: 25px;
+  position: relative;
+  z-index: 2; }
 
 .photo-text {
   font-family: "RalewayBold";
-  font-size: 18px; }
+  font-size: 18px;
+  position: relative;
+  z-index: 2; }
 
 .photo-item_large {
   height: 400px;
@@ -2808,17 +2829,19 @@ img {
 .view-list {
   width: 18px;
   height: 18px;
-  background: url(../img/list.png) no-repeat; }
+  opacity: 0.3;
+  background: url(../img/list-active.png) no-repeat; }
   .view-list.active {
-    background: url(../img/list-active.png) no-repeat; }
+    opacity: 1; }
 
 .view-column {
   width: 18px;
   height: 18px;
   margin-left: 20px;
-  background: url(../img/column.png) no-repeat; }
+  background: url(../img/column-active.png) no-repeat;
+  opacity: 0.3; }
   .view-column.active {
-    background: url(../img/column-active.png) no-repeat; }
+    opacity: 1; }
 
 .view-block {
   padding-top: 20px;
@@ -2931,9 +2954,10 @@ img {
   margin-left: 15px;
   width: 23px;
   height: 21px;
-  background: url(../img/zone.png) no-repeat; }
+  background: url(../img/zone-active.png) no-repeat;
+  opacity: 0.3; }
   .view-map.active {
-    background: url(../img/zone-active.png) no-repeat; }
+    opacity: 1; }
 
 .zone-tab {
   padding: 20px; }
@@ -2951,16 +2975,8 @@ img {
   background-position: 50%;
   background-size: cover;
   position: relative; }
-  .zone-list__img:after {
-    content: "";
-    display: block;
-    position: absolute;
-    z-index: 1;
-    right: 0;
-    top: 0;
-    width: 60px;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.2); }
+  .zone-list__img:hover .owl-nav {
+    display: block; }
 
 .zone-label {
   color: #fff;
@@ -4069,3 +4085,78 @@ blockquote {
   overflow: auto; }
   .checkbox-list_service .checkbox-item {
     padding-right: 40px; }
+
+.vip-label {
+  position: absolute;
+  z-index: 3;
+  right: -1px;
+  top: 0;
+  width: 73px;
+  height: 73px;
+  background: url(../img/vip.png) no-repeat;
+  background-size: contain;
+  background-position: 50%; }
+
+.hit-label {
+  position: absolute;
+  z-index: 3;
+  right: -1px;
+  top: 0;
+  width: 73px;
+  height: 73px;
+  background: url(../img/hit.png) no-repeat 50%;
+  background-size: contain; }
+
+.tour-label {
+  width: 64px;
+  height: 35px;
+  background: url(../img/3d-t.png) no-repeat 50%;
+  background-size: contain;
+  position: absolute;
+  z-index: 2;
+  left: 10px;
+  top: 10px; }
+
+.products-img:hover .owl-nav {
+  display: block; }
+
+.products-img:hover .products-img__btns {
+  display: block; }
+
+.products-img__carousel .owl-nav {
+  display: none; }
+
+.products-img__carousel .owl-prev {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 50px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2) url(../img/pr-prev.png) no-repeat 50%;
+  text-indent: -9999px; }
+
+.products-img__carousel .owl-next {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2) url(../img/pr-next.png) no-repeat 50%;
+  text-indent: -9999px; }
+
+.products-img__btns {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  left: 0;
+  display: none; }
+  .products-img__btns .btn {
+    display: block;
+    width: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    float: left;
+    min-width: inherit; }
