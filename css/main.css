@@ -4036,9 +4036,9 @@ blockquote {
     margin-left: 5px; }
 
 .filter-search {
-  width: 185px;
-  margin-right: 50px;
-  margin-top: 15px;
+  width: 220px;
+  margin-right: 10px;
+  margin-top: 10px;
   position: relative; }
   .filter-search__input {
     display: block;
@@ -4160,3 +4160,112 @@ blockquote {
     text-align: center;
     float: left;
     min-width: inherit; }
+
+.card-zone__thumb__carousel {
+  width: 1200px; }
+  .card-zone__thumb__carousel .item {
+    float: left;
+    width: 80px;
+    height: 80px; }
+    .card-zone__thumb__carousel .item + .item {
+      margin-left: 15px; }
+
+/******************* EXTERNAL SCROLLBAR *******************/
+.external-scroll_x {
+  cursor: pointer;
+  display: none;
+  position: relative;
+  background: #eef1f4; }
+
+.external-scroll_x.scroll-scrollx_visible {
+  display: block;
+  height: 5px;
+  left: 0;
+  margin-top: 10px;
+  width: 100%; }
+
+.external-scroll_x div,
+.external-scroll_y div {
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 100%; }
+
+.external-scroll_x .scroll-bar {
+  background: #4679d2;
+  z-index: 12; }
+
+.external-scroll_x .scroll-bar {
+  width: 30px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px; }
+
+.slct {
+  display: block;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #ebf0f4;
+  width: 220px;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  color: #75787a;
+  font-size: 12px;
+  font-family: "RalewayMedium";
+  text-align: left;
+  position: relative; }
+  .slct:after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 4px;
+    position: absolute;
+    z-index: 2;
+    right: 10px;
+    top: 50%;
+    margin-top: -2px;
+    background: url(../img/drop-grey.png) no-repeat; }
+
+.slct.active {
+  -webkit-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0; }
+
+.drop {
+  margin: 0;
+  padding: 0;
+  width: 220px;
+  max-height: 250px;
+  background: #ebf0f4;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  font-size: 12px;
+  font-family: "RalewayMedium";
+  text-align: left;
+  display: none;
+  position: absolute;
+  z-index: 10; }
+
+.drop li {
+  list-style: none;
+  cursor: pointer;
+  display: block;
+  color: #75787a;
+  padding: 10px 15px; }
+
+.drop li:hover {
+  color: #000; }
+
+.drop.scrollbar-inner > .scroll-element.scroll-y {
+  height: 95%;
+  right: 10px;
+  top: 0;
+  width: 2px; }
+
+.drop.scrollbar-inner > .scroll-element .scroll-element_track {
+  background: #fff; }

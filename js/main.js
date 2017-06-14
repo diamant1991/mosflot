@@ -26,30 +26,78 @@ if($('.card-zone__carousel').length){
     initSliders(targetSlider, targetPager);
   });
 
-  $('.card-zone__thumb__carousel').owlCarousel({
-      loop:false,
-      margin:5,
-      dots: false,
-      nav:true,
-      responsive:{
-          0:{
-              items:2
-          },
-          450:{
-              items:4
-          },
-          768:{
-              items:5
-          },
-          992:{
-              items:7
-          },
-          1200:{
-              items:9
-          }
-      }
+  // $('.card-zone__thumb__carousel').owlCarousel({
+  //     loop:false,
+  //     margin:5,
+  //     dots: false,
+  //     nav:true,
+  //     responsive:{
+  //         0:{
+  //             items:2
+  //         },
+  //         450:{
+  //             items:4
+  //         },
+  //         768:{
+  //             items:5
+  //         },
+  //         992:{
+  //             items:7
+  //         },
+  //         1200:{
+  //             items:9
+  //         }
+  //     }
+  // })
+}
+
+if($('.card-zone__thumb__carousel').length){
+  var countItem = $('.card-zone__thumb__carousel .item').length
+  var totalWidth = (countItem * 95) - 15
+  $('.card-zone__thumb__carousel').css('width', totalWidth + 'px');
+
+  $('.card-zone__thumb').scrollbar({
+    "autoScrollSize": false,
+    "scrollx": $('.external-scroll_x')
   })
 }
+
+// Select
+$('.slct').click(function(){
+  var dropBlock = $(this).parent().find('.drop');
+
+  if( dropBlock.is(':hidden') ) {
+    dropBlock.show();
+
+    $(this).addClass('active');
+    $('.drop').find('li').click(function(){
+      var selectResult = $(this).html();
+      $(this).closest('.select').find('input').val(selectResult);
+      $(this).closest('.select').find('.slct').removeClass('active').html(selectResult);
+
+      dropBlock.hide();
+    });
+  
+  } else {
+    $(this).removeClass('active');
+    dropBlock.hide();
+  }
+
+  return false;
+});
+
+$('.drop').scrollbar({
+    
+  })
+
+$(document).mouseup(function (e) {
+  var container = $(".drop");
+  if (container.has(e.target).length === 0){
+      container.hide()
+      $('.slct').removeClass('active');
+  }
+});
+
 $('.products-img__carousel').owlCarousel({
     loop:true,
     nav:true,
