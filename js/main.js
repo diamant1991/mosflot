@@ -396,3 +396,10 @@ $('.tooltip-icon').hover(function() {
   var id = $(this).attr('data-info');
   $('#tooltip-text' + id).removeClass('active')
 });
+
+$('.item_ship').hover(function() {
+  var id = $(this).attr('data-service');
+  $('.text-walks' + id).show() 
+}, function() {
+  $('.text-walks').hide()
+});

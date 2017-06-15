@@ -2602,6 +2602,16 @@ img {
     appearance: none !important; }
   .filter-select select::-ms-expand {
     display: none; }
+  .filter-select_review {
+    float: none;
+    width: 100%;
+    padding: 0;
+    height: auto;
+    border: 0; }
+    .filter-select_review select {
+      height: 55px;
+      font-size: 13px;
+      font-family: "RalewayRegular"; }
 
 .sidebar-select select {
   width: auto;
@@ -4071,7 +4081,8 @@ blockquote {
   font-size: 13px;
   font-family: "RalewayMedium";
   padding-left: 50px;
-  padding-right: 50px; }
+  padding-right: 50px;
+  display: none; }
   .text-walks__item {
     margin-bottom: 15px; }
     .text-walks__item:nth-child(3n+1) {
@@ -4269,3 +4280,25 @@ blockquote {
 
 .drop.scrollbar-inner > .scroll-element .scroll-element_track {
   background: #fff; }
+
+.more-filter {
+  float: right;
+  position: relative;
+  padding: 22px 15px; }
+  .more-filter:hover .filter-dropdown {
+    display: block; }
+  .more-filter span {
+    cursor: pointer; }
+
+.filter-dropdown {
+  position: absolute;
+  z-index: 10;
+  background: #fff;
+  width: 250px;
+  right: 0;
+  margin-top: 21px;
+  display: none; }
+  .filter-dropdown .filter-item_news {
+    float: none;
+    width: 100%;
+    display: block; }
